@@ -1,0 +1,38 @@
+/* Mathematical description of How base conversion algorithm works.
+
+Given an integer N, To find the last digit of N in base m we can do N (mod m),
+
+recall, N= mq+r, for some q,r in Z
+
+In base 10, dividing by 10 moves a place value to the left,
+
+similarly dividing by m moves a place value to left in base m
+
+To obtain the second digit from the left in base m, we take the q/m (mod m)
+
+continue this process iteratively until quotient becomes zero.
+
+*/
+
+
+#include<stdio.h>
+int main(){
+
+int r,n,base,convert=0;;
+
+printf("Enter your number to convert: \n");
+scanf("%d",&base);
+
+printf("Enter your base \n");
+scanf("%d",&n);
+
+while (n!=0) {
+    r = n % base;
+    convert = convert + (r * 10);
+    n=n/base;
+}
+
+printf("The converted number is %d",convert);
+
+return 0;
+}
