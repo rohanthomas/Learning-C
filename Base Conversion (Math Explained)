@@ -1,4 +1,4 @@
-/* Mathematical description of How base conversion algorithm works.
+/* A Mathematical description on How base conversion algorithm works.
 
 Given an integer N, To find the last digit of N in base m we can do N (mod m),
 
