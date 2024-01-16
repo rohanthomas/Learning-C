@@ -1,1 +1,1 @@
-Repository contaning maths related C exercises.
+Repository contaning math related C exercises.
