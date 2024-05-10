@@ -11,28 +11,3 @@ similarly dividing by m moves a place value to left in base m
 To obtain the second digit from the left in base m, we take the q/m (mod m)
 
 continue this process iteratively until quotient becomes zero.
-
-*/
-
-
-#include<stdio.h>
-int main(){
-
-int r,n,base,convert=0;;
-
-printf("Enter your number to convert: \n");
-scanf("%d",&base);
-
-printf("Enter your base \n");
-scanf("%d",&n);
-
-while (n!=0) {
-    r = n % base;
-    convert = convert + (r * 10);
-    n=n/base;
-}
-
-printf("The converted number is %d",convert);
-
-return 0;
-}
