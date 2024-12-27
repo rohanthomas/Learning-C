@@ -18,7 +18,7 @@ int main(){
 
 // Inputting the edges
 
-while(init != -1 && terminal != -1){
+while(init != -1 && terminal != -1){ // use -1 -1 to terminate the input 
     printf("Enter intial and terminal vertices of the edge: ");
     scanf("%d %d",&init, &terminal);
     adj[init][terminal] = 1;
